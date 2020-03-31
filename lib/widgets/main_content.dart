@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:wadoido/models/category.dart';
 import 'package:wadoido/models/plan.dart';
+import 'package:wadoido/widgets/category_view.dart';
 import 'package:wadoido/widgets/plans_list.dart';
 
 class MainContent extends StatefulWidget {
@@ -9,7 +10,7 @@ class MainContent extends StatefulWidget {
 }
 
 class _MainContentState extends State<MainContent> {
-  Category cat;
+  Category catFilter;
   List<Plan> list;
 
   @override
@@ -27,7 +28,7 @@ class _MainContentState extends State<MainContent> {
 
   _toggleFilter(Category filter) {
     setState(() {
-      cat = cat == filter ? null : filter;
+      catFilter = catFilter == filter ? null : filter;
     });
   }
 
@@ -44,11 +45,7 @@ class _MainContentState extends State<MainContent> {
               itemCount: Category.values.length,
               itemBuilder: (BuildContext context, int index) {
                 return GestureDetector(
-                  child: Container(
-                    child: Text(Category.values[index].toString()),
-                    width: 160.0,
-                    color: Colors.red,
-                  ),
+                  child: categoryView(Category.values[index], catFilter),
                   onTap: () => {_toggleFilter(Category.values[index])},
                 );
               })),
@@ -56,10 +53,10 @@ class _MainContentState extends State<MainContent> {
           ? Expanded(
               child: Center(
                   child: SizedBox(
-              width: 1000,
-              child: cat != null
+              width: 1200,
+              child: catFilter != null
                   ? plansList(
-                      list.where((element) => element.category == cat).toList())
+                      list.where((element) => element.category == catFilter).toList())
                   : plansList(list),
             )))
           : Center(child: CircularProgressIndicator())

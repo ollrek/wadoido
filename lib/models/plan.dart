@@ -7,10 +7,17 @@ class Plan {
   Category category;
   String title;
   String link;
+  String info;
   DateTime date;
   DateTime endDate;
 
-  Plan({this.category, this.title, this.link, this.date, this.endDate});
+  Plan(
+      {this.category,
+      this.title,
+      this.link,
+      this.date,
+      this.endDate,
+      this.info});
 
   factory Plan.fromJson(Map<String, dynamic> json) {
     return Plan(
@@ -18,8 +25,9 @@ class Plan {
           .firstWhere((e) => e.toString() == 'Category.' + json['category']),
       title: json['titre'],
       link: json['link'],
-      date: json['date'],
-      endDate: DateTime.parse(json['enddate']),
+      info: json['info'],
+      date: json['date'] != null ? DateTime.parse(json['date']) : null,
+      endDate: json['enddate'] != null ? DateTime.parse(json['enddate']) : null,
     );
   }
 }
@@ -38,6 +46,5 @@ Future<List<Plan>> loadPlan() async {
   String jsonString = await _loadAPlanAsset();
   final jsonResponse = json.decode(jsonString);
   list = jsonResponse.map<Plan>((json) => Plan.fromJson(json)).toList();
-  // if (cat != null) list.retainWhere((element) => element.category == cat);
   return list;
 }
