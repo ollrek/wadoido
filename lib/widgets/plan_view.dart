@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:wadoido/models/category.dart';
 import 'package:wadoido/models/plan.dart';
@@ -23,7 +24,7 @@ Widget planView(Plan plan, int index) {
           children: <Widget>[
             Text(
               plan.title,
-              style: TextStyle(fontSize: 24),
+              style: TextStyle(fontSize: 23, fontWeight: FontWeight.bold),
               textAlign: TextAlign.center,
             ),
             SizedBox(
@@ -32,10 +33,12 @@ Widget planView(Plan plan, int index) {
             (plan.link != '')
                 ? GestureDetector(
                     child: Center(
-                      child: Text(
-                        'Lien',
-                        style: TextStyle(decoration: TextDecoration.underline),
-                      ),
+                      child: Text('Lien',
+                          style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              decoration: TextDecoration.underline,
+                              color: Colors.grey)),
                     ),
                     onTap: () {
                       launch(plan.link);
@@ -44,21 +47,24 @@ Widget planView(Plan plan, int index) {
             SizedBox(
               height: 8,
             ),
-            Text(
-              (plan.date != null
-                      ? 'le ' + DateFormat('dd/MM').format(plan.date) + ' '
-                      : '') +
-                  (plan.endDate != null
-                      ? 'jusqu\'au ' + DateFormat('dd/MM').format(plan.endDate)
-                      : ''),
-              style: TextStyle(fontStyle: FontStyle.italic),
-            )
+            (plan.date != null
+                ? Text(
+                    'le ' + DateFormat('dd/MM').format(plan.date) + ' ',
+                    style: GoogleFonts.lato(fontStyle: FontStyle.italic),
+                  )
+                : Container()),
+            (plan.endDate != null
+                ? Text(
+                    'jusqu\'au ' + DateFormat('dd/MM').format(plan.endDate),
+                    style: GoogleFonts.lato(fontStyle: FontStyle.italic),
+                  )
+                : Container()),
           ],
         ))),
     plan.info != null
         ? Positioned(
-            top: 5,
-            left: 5,
+            bottom: 5,
+            right: 5,
             child: Tooltip(
               child: Icon(
                 Icons.info,
@@ -68,8 +74,8 @@ Widget planView(Plan plan, int index) {
             ))
         : Container(),
     Positioned(
-        top: 0,
-        right: 0,
+        bottom: 0,
+        left: 0,
         child: Container(
           height: 20,
           width: 20,

@@ -15,8 +15,5 @@ Widget plansList(List<Plan> plans) {
           planView(plans[index], index),
       staggeredTileBuilder: (int index) => new StaggeredTile.fit(1),
     );
-    // } else {
-    //   return SliverToBoxAdapter();
-    // }
   });
 }

@@ -5,14 +5,26 @@ Widget appBar() {
   return AppBar(
     elevation: 0.0,
     flexibleSpace: Container(
-      padding: EdgeInsets.all(10),
       height: 120,
       width: double.infinity,
-      child: Column(
+      child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Text('#Noidea', style: (GoogleFonts.lato(fontSize: 24))),
+          Text('B',
+              style: (GoogleFonts.openSansCondensed(
+                  fontSize: 34, ))),
+          Text('ons ', style: (GoogleFonts.openSansCondensed(fontSize: 30))),
+          Text('P',
+              style: (GoogleFonts.openSansCondensed(
+                  fontSize: 34, ))),
+          Text('lans du ',
+              style: (GoogleFonts.openSansCondensed(fontSize: 30))),
+          Text('C',
+              style: (GoogleFonts.openSansCondensed(
+                  fontSize: 34, ))),
+          Text('onfinement',
+              style: (GoogleFonts.openSansCondensed(fontSize: 30))),
         ],
       ),
       decoration: BoxDecoration(color: Colors.white),

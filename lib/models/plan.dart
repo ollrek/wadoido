@@ -33,7 +33,7 @@ class Plan {
 }
 
 Future<String> _loadAPlanAsset() async {
-  return await rootBundle.loadString('data.json');
+  return await rootBundle.loadString('assets/data.json');
 }
 
 Future wait(int seconds) {

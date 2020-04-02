@@ -55,8 +55,9 @@ class _MainContentState extends State<MainContent> {
                   child: SizedBox(
               width: 1200,
               child: catFilter != null
-                  ? plansList(
-                      list.where((element) => element.category == catFilter).toList())
+                  ? plansList(list
+                      .where((element) => element.category == catFilter)
+                      .toList())
                   : plansList(list),
             )))
           : Center(child: CircularProgressIndicator())
