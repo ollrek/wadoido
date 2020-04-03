@@ -64,25 +64,3 @@ class _MainContentState extends State<MainContent> {
     ]);
   }
 }
-// }
-// Widget mainContent() {
-//   return FutureBuilder(
-//       future: loadPlan(),
-//       builder: (context, snapshot) {
-//         Widget content;
-//         content = snapshot.data != null
-//             ? plansList(snapshot.data)
-//             : Center(
-//                 child: CircularProgressIndicator(),
-//               );
-
-//         return Column(children: <Widget>[
-//           Expanded(
-//               child: Center(
-//                   child: SizedBox(
-//             width: 1000,
-//             child: content,
-//           )))
-//         ]);
-//       });
-// }

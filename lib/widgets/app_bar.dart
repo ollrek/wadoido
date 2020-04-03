@@ -13,16 +13,16 @@ Widget appBar() {
         children: <Widget>[
           Text('B',
               style: (GoogleFonts.openSansCondensed(
-                  fontSize: 34, ))),
+                  fontSize: 34, fontWeight: FontWeight.bold))),
           Text('ons ', style: (GoogleFonts.openSansCondensed(fontSize: 30))),
           Text('P',
               style: (GoogleFonts.openSansCondensed(
-                  fontSize: 34, ))),
+                  fontSize: 34, fontWeight: FontWeight.bold))),
           Text('lans du ',
               style: (GoogleFonts.openSansCondensed(fontSize: 30))),
           Text('C',
               style: (GoogleFonts.openSansCondensed(
-                  fontSize: 34, ))),
+                  fontSize: 34, fontWeight: FontWeight.bold))),
           Text('onfinement',
               style: (GoogleFonts.openSansCondensed(fontSize: 30))),
         ],

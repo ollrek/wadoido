@@ -5,7 +5,6 @@ import 'package:wadoido/widgets/plan_view.dart';
 
 Widget plansList(List<Plan> plans) {
   return LayoutBuilder(builder: (context, constraints) {
-    // if (constraints.crossAxisExtent > 500) {
     return StaggeredGridView.countBuilder(
       crossAxisCount: (constraints.maxWidth / 350).floor() + 1,
       itemCount: plans.length,

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -43,17 +42,6 @@ Widget footer() {
                         onTap: () {
                           launch("mailto:ljourdes.dev@gmail.com");
                         }),
-                    SizedBox(width: 8),
-                    Tooltip(
-                      showDuration: Duration(seconds: 10),
-                      child: GestureDetector(
-                          child: FaIcon(FontAwesomeIcons.discord),
-                          onTap: () {
-                            Clipboard.setData(
-                                ClipboardData(text: "Ollrek#8130"));
-                          }),
-                      message: "Ollrek#8130 (clic pour copier)",
-                    ),
                     SizedBox(width: 8),
                     GestureDetector(
                         child: FaIcon(FontAwesomeIcons.twitter),

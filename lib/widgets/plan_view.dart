@@ -66,12 +66,14 @@ Widget planView(Plan plan, int index) {
             bottom: 5,
             right: 5,
             child: Tooltip(
+              key: Key(index.toString() + 'tooltip'),
               child: Icon(
                 Icons.info,
                 color: appCategories[plan.category]['color'],
               ),
               message: plan.info,
-            ))
+            ),
+          )
         : Container(),
     Positioned(
         bottom: 0,

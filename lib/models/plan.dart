@@ -25,7 +25,7 @@ class Plan {
           .firstWhere((e) => e.toString() == 'Category.' + json['category']),
       title: json['titre'],
       link: json['link'],
-      info: json['info'],
+      info: json['information'],
       date: json['date'] != null ? DateTime.parse(json['date']) : null,
       endDate: json['enddate'] != null ? DateTime.parse(json['enddate']) : null,
     );
