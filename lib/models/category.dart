@@ -1,19 +1,28 @@
 import 'package:flutter/material.dart';
 
-enum Category { 
-  // work, 
-  // tv, 
-  musique, sport, cinema, art, gaming, lecture }
+enum Category {
+  cours,
+  tv,
+  musique,
+  sport,
+  cinema,
+  art,
+  jeux,
+  lecture,
+  // famille,
+  enfants,
+  outils
+}
 
 Map<Category, dynamic> appCategories = {
-  // Category.work: {
-  //   'name': 'Work',
-  //   'color': Color(0xffb8be78),
-  // },
-  // Category.tv: {
-  //   'name': 'TV',
-  //   'color': Color(0xff2f4858),
-  // },
+  Category.cours: {
+    'name': 'Apprendre',
+    'color': Color(0xffb8be78),
+  },
+  Category.tv: {
+    'name': 'TV',
+    'color': Color(0xff2f4858),
+  },
   Category.musique: {
     'name': 'Musique',
     'color': Color(0xffceb2ed),
@@ -30,12 +39,20 @@ Map<Category, dynamic> appCategories = {
     'name': 'Art',
     'color': Color(0xff6E2C00),
   },
-  Category.gaming: {
-    'name': 'Gaming',
+  Category.jeux: {
+    'name': 'Jeux',
     'color': Color(0xffA569BD),
   },
   Category.lecture: {
     'name': 'Lecture',
     'color': Color(0xff7D6608),
+  },
+  Category.enfants: {
+    'name': 'Enfants',
+    'color': Color(0xffD35400),
+  },
+  Category.outils: {
+    'name': 'Outils',
+    'color': Color(0xff2874A6),
   },
 };

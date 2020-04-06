@@ -22,7 +22,7 @@ class Plan {
   factory Plan.fromJson(Map<String, dynamic> json) {
     return Plan(
       category: Category.values
-          .firstWhere((e) => e.toString() == 'Category.' + json['category']),
+          .firstWhere((e) => e.toString() == 'Category.' + json['category'], orElse: () => null),
       title: json['titre'],
       link: json['link'],
       info: json['information'],
@@ -45,6 +45,10 @@ Future<List<Plan>> loadPlan() async {
   List<Plan> list;
   String jsonString = await _loadAPlanAsset();
   final jsonResponse = json.decode(jsonString);
-  list = jsonResponse.map<Plan>((json) => Plan.fromJson(json)).toList();
+  list = jsonResponse
+      .map<Plan>((json) => Plan.fromJson(json))
+      .toList()
+      .reversed
+      .toList();
   return list;
 }

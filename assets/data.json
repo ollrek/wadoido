@@ -1,5 +1,37 @@
 [
     {
+        "titre": "Orange : 20 chaînes en clair",
+        "link": "https://www.orange.com/fr/Press-Room/communiques/communiques-2020/Orange-accompagne-ses-clients-en-France-pendant-le-confinement-et-offre-10-Go-d-internet-mobile-supplementaires-et-20-chaines-en-clair",
+        "category": "tv"
+    },
+    {
+        "titre": "Orange : 10 Go de data supplémentaires",
+        "link": "https://www.orange.com/fr/Press-Room/communiques/communiques-2020/Orange-accompagne-ses-clients-en-France-pendant-le-confinement-et-offre-10-Go-d-internet-mobile-supplementaires-et-20-chaines-en-clair",
+        "category": "outils"
+    },
+    {
+        "titre": "Bouygues : + de 30 chaînes en clair",
+        "link": "https://www.bouyguestelecom.fr/choisir-bouygues-telecom/covid-19-bouygues-telecom-se-mobilise",
+        "category": "tv"
+    },
+    {
+        "titre": "SFR : + de 30 châines en clair",
+        "link": "https://actus.sfr.fr/cine-series/cinema/confinement-sfr-offre-des-chaines-tv-a-ses-abonnes-202003180001.html?awc=7315_1586177699_7fdae443917acb11421bf1533cb6f442&ectrans=1&partnerid=50f57b348a6c9cbd7acc15bd6983491c&sfrcpid=t3_awin_deeplink",
+        "category": "tv"
+    },
+    {
+        "titre": "Free : + de 40 chaînes offertes ",
+        "link": "https://twitter.com/free/status/1245245144959463430",
+        "category": "tv",
+        "enddate": "2020-04-29T22:00:00.000Z"
+    },
+    {
+        "titre": "Free : diverses améliorations pour les forfaits",
+        "link": "https://www.free.fr/freebox/informations-covid-19/",
+        "information": "Voir milieu de page",
+        "category": "outils"
+    },
+    {
         "titre": "100+ Workouts LES MILLS open bar",
         "link": "https://watch.lesmillsondemand.com/at-home-workouts",
         "category": "sport"
@@ -17,7 +49,7 @@
         "category": "art"
     },
     {
-        "titre": "Films curieux et artistiques",
+        "titre": "Films curieux et artistiques par MK2",
         "link": "https://www.troiscouleurs.fr/curiosity-by-mk2/",
         "category": "cinema"
     },
@@ -31,7 +63,7 @@
     {
         "titre": "Jeux sur la plateforme GOG",
         "link": "https://www.gog.com/partner/stay_at_home",
-        "category": "gaming"
+        "category": "jeux"
     },
     {
         "titre": "FizzUp premium 30j offerts",
@@ -41,13 +73,114 @@
         "enddate": "2020-05-15T22:00:00.000Z"
     },
     {
-        "titre": "500 ebooks",
+        "titre": "500 ebooks sur FNAC",
         "link": "https://twitter.com/Fnac/status/1243900675601453057",
         "category": "lecture"
     },
     {
-        "titre": "1 mois de BD, comics, manga",
+        "titre": "1 mois de BD, comics, manga sur Izneo",
         "link": "https://www.izneo.com/fr/",
         "category": "lecture"
+    },
+    {
+        "titre": "NBA League Pass ouvert",
+        "link": "https://www.nba.com/nba-fan-letter-league-pass-free-preview",
+        "category": "tv",
+        "enddate": "2020-04-21T22:00:00.000Z"
+    },
+    {
+        "titre": "NFL Game Pass ouvert",
+        "link": "https://www.touchdownactu.com/233352/le-nfl-game-pass-gratuit-a-partir-de-jeudi/",
+        "category": "tv",
+        "enddate": "2020-07-30T22:00:00.000Z"
+    },
+    {
+        "titre": "PSG TV pendant le confinement",
+        "link": "https://www.psg.fr/equipes/equipe-premiere/content/psg-tv-devient-gratuit-ces-prochaines-semaines#",
+        "category": "tv"
+    },
+    {
+        "titre": "OL TV pendant le confinement",
+        "link": "https://www.ol.fr/fr-fr/contents/Articles/2020/03/20/restons-tous-en-contact",
+        "category": "tv"
+    },
+    {
+        "titre": "Malt Academies, webinars techs et business",
+        "link": "https://www.malt-academy.com/malt-academies",
+        "category": "cours"
+    },
+    {
+        "titre": "Visite du Louvre de Paris",
+        "link": "https://www.louvre.fr/fr/visites-en-ligne",
+        "category": "art"
+    },
+    {
+        "titre": "Visite du Victoria and Albert Museum de Londres",
+        "link": "https://artsandculture.google.com/partner/victoria-and-albert-museum",
+        "category": "art"
+    },
+    {
+        "titre": "Visite du MoMA de New-York",
+        "link": "https://artsandculture.google.com/partner/moma-the-museum-of-modern-art",
+        "category": "art"
+    },
+    {
+        "titre": "Cours vidéos pour toute la famille 1 mois sur Skilleos",
+        "link": "https://moncompte.skilleos.com/fr/solidarite?utm_source=sendinblue&utm_campaign=NL_RP_SOLIDARITE-ALL_MARS20&utm_medium=email",
+        "category": "cours"
+    },
+    {
+        "titre": "La comédie française (continue)",
+        "link": "https://www.comedie-francaise.fr/",
+        "category": "art"
+    },
+    {
+        "titre": "Des livres offerts sur confinementlecture !",
+        "link": "https://covid19.confinementlecture.com/",
+        "category": "lecture"
+    },
+    {
+        "titre": "Catalogue enfant gratuit sur Amazon video",
+        "link": "https://www.primevideo.com/ref=dvm_MLP_FVOD_2_ft?encoding=UTF8&deviceTypeId=A13Q6A55DBZB7M&merchId=freeforall",
+        "category": "enfants"
+    },
+    {
+        "titre": "Premières notions de chinois mandarin par lespetitsmandarins",
+        "link": "https://lespetitsmandarins.fr/",
+        "category": "cours"
+    },
+    {
+        "titre": "Jeux de société en Print'n'Play par Asmodee",
+        "link": "https://fr.asmodee.com/fr/news/2020/3/27/pack-jeux/",
+        "category": "jeux"
+    },
+    {
+        "titre": "Montreux Jazz Festival : 50 Concerts Visionnables",
+        "link": "https://www.montreuxjazzfestival.com/fr/50-concerts-en-streaming/",
+        "information": "FREEMJF1M",
+        "category": "musique"
+    },
+    {
+        "titre": "Tout Naruto, Naruto Shippuden, Boruto gratuits sur ADN",
+        "link": "https://www.instagram.com/p/B-nJ88vpbYf/?utm_source=ig_web_copy_link",
+        "information": "Directement sur le site adn.moe/Jow à l'aide d'un navigateur",
+        "category": "tv"
+    },
+    {
+        "titre": "3 mois sur Unity Learn, développement de jeu vidéo",
+        "link": "https://learn.unity.com/",
+        "category": "cours"
+    },
+    {
+        "titre": "Jeu de société Wild Space en version Print'n'Play",
+        "link": "https://twitter.com/CatchUpGames/status/1246084004484440066",
+        "information": "Autres jeux en print and play : http://www.catchupgames.com/telechargements/",
+        "category": "jeux"
+    },
+    {
+        "titre": "Opera, ballets, musique à revoir par l'Opéra de Paris",
+        "link": "www.operadeparis.fr/magazine/a-revoir",
+        "category": "art",
+        "enddate": "2020-05-02T22:00:00.000Z"
     }
 ]

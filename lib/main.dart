@@ -1,10 +1,17 @@
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:wadoido/widgets/footer.dart';
 import 'package:wadoido/widgets/main_content.dart';
 import 'package:wadoido/widgets/app_bar.dart';
 
+import 'dart:html';
+import 'package:usage/usage_html.dart';
+
 void main() {
+  var _analytics = AnalyticsHtml('UA-162907169-1', 'BPC', '1.0');
+  _analytics.sendScreenView(window.location.pathname);
+
   runApp(App());
 }
 
